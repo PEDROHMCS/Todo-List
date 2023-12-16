@@ -1,0 +1,72 @@
+.task{
+    width: 100%;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    padding: 1.6rem;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    border-radius: .8rem;
+}
+
+.task + .task{
+    margin-top: 1.2rem;
+}
+
+.task .circle{
+    color: var(--blue-300);
+    transition: .1s;
+}
+
+
+
+.task .circle:hover{
+    cursor: pointer;
+    color: var(--blue-500);
+    background-color: rgba(30, 111, 159, .1);
+    border-radius: 999rem;
+    
+}
+
+.task .circleChecked{
+    background-color: var(--purple-500);
+    color: var(--gray-100);
+    border-radius: 99rem;
+    transition: .2s;
+}
+
+.task .circleChecked:hover{
+    background-color: var(--purple-300);
+}
+
+.task:has(.circleChecked) p{
+    text-decoration: line-through;
+    color: var(--gray-300);
+    line-height: 140%;
+
+
+}
+
+.task:has(.circleChecked){
+    border: 1px solid var(--Gray-500, #262626);
+    box-shadow: none;
+}
+
+.task p{
+    flex: 1;
+    gap: 1.2rem;
+    color: var(--gray-100);
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+}
+
+.task .trash{
+    transition: .2s;
+    color: var(--gray-300);
+}
+
+.task .trash:hover{
+    cursor: pointer;
+    color: var(--red-300);
+}

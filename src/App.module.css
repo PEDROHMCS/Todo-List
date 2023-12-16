@@ -1,0 +1,116 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--gray-600);
+}
+
+.inputsHandler{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    margin-top: -2.8rem;
+}
+
+form{
+    height: 100%;
+    width: 73rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.inputTask{
+    background-color: var(--gray-500);
+    padding: 1.6rem;
+    outline: none;
+    border: 1px solid var(--gray-700);
+    flex: 1;
+    color: var(--gray-100);
+    border-radius: .8rem;
+    line-height: 140%;
+    font-family: 'Inter', sans-serif;
+    transition: .2s;
+    
+}
+
+.inputTask:focus{
+    border: 1px solid var(--purple-500);
+}
+
+button[type="submit"]{
+    border: none;
+    outline: none;
+    background-color: var(--blue-500);
+    height: 5.2rem;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 140%;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--gray-100);
+    border-radius: .8rem;
+    transition: .1s;
+}
+
+button[type="submit"]:hover{
+    cursor: pointer;
+    background-color: var(--blue-300);
+}
+
+.tasksArea{
+    margin-top: 6.4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.tasksHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 73rem;
+}
+
+.createdTasks, .doneTasks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.createdAmount, .doneAmount{
+    padding: .2rem .8rem;
+    background-color: var(--gray-400);
+    color: var(--gray-100);
+    border-radius: 99rem;
+}
+
+.createdText{
+    color: var(--blue-300);
+}
+
+.doneText{
+    color: var(--purple-300);
+}
+
+.tasksArea main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 73rem;
+    border-radius: 8px;
+    border-top: 1px solid var(--Grey-400, #333);
+    
+}
